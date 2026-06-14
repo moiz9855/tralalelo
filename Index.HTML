@@ -1,0 +1,733 @@
+<!DOCTYPE html><html lang="en">     
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexus Aquarium</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="shortcut icon" href="./Images/WhatsApp Image 2025-04-24 at 13.25.50_0c624746.jpg" type="image/x-icon" style="border-radius: 1000px;">
+  <script>
+    $(document).ready(function(){
+    $(".btn1").click(function(){
+      $(".slide1").slideToggle();
+      
+    });
+   
+  })
+        $(document).ready(function(){
+    $(".btn2").click(function(){
+      $(".slide2").slideToggle();
+      
+    });
+   
+  })
+        $(document).ready(function(){
+    $(".btn3").click(function(){
+      $(".slide3").slideToggle();
+      
+    });
+   
+  })
+        $(document).ready(function(){
+    $(".btn4").click(function(){
+      $(".slide4").slideToggle();
+      
+    });
+   
+  })
+        $(document).ready(function(){
+    $(".btn5").click(function(){
+      $(".slide5").slideToggle();
+      
+    });
+   
+  })
+        $(document).ready(function(){
+    $(".btn6").click(function(){
+      $(".slide6").slideToggle();
+      
+    });
+   
+  })
+        $(document).ready(function(){
+    $(".btn7").click(function(){
+      $(".slide7").slideToggle();
+      
+    });
+   
+  })
+        $(document).ready(function(){
+    $(".btn8").click(function(){
+      $(".slide8").slideToggle();
+      
+    });
+   
+  })
+        $(document).ready(function(){
+    $(".btn9").click(function(){
+      $(".slide9").slideToggle();
+      
+    });
+   
+  })
+
+  $(document).ready(function () {
+    $('#themeToggle').click(function () {
+      $('body, .card, .navbar, .footer, .album').toggleClass('dark-theme');
+      
+      // Change button text dynamically
+      if ($(this).text() === 'Dark Mode') {
+        $(this).text('Light Mode');
+      } else {
+        $(this).text('Dark Mode');
+      }
+    });
+  });
+
+  
+  </script>
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .navbar, .footer {
+    background-color: #0077b6;
+  }
+  .navbar a, .footer p {
+    color: white;
+  }
+  .section-title {
+    margin-top: 40px;
+  }
+  .navbar{
+      padding: 20px;
+  }
+  #about{
+    border: 8px solid rgba(30, 185, 30, 0.5);
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: sans-serif;
+  }
+  #about h1{
+    text-align: center;
+    color: rgb(218, 144, 144); 
+    
+  }
+  #about h4{
+    text-align: center;
+  }
+  .table {
+    margin-top: 20px;
+  }
+  .slide1{
+      display: none;
+  }
+  .slide2{
+      display: none;
+  }
+  .slide3{
+      display: none;
+  }
+  .slide4{
+      display: none;
+  }
+  .slide5{
+      display: none;
+  }
+  .slide6{
+      display: none;
+  }
+  .slide7{
+      display: none;
+  }
+  .slide8{
+      display: none;
+  }
+  .slide9{
+      display: none;
+  }
+  .btn1{
+      border: 1px solid gray;
+      border-radius: 4px;
+      background-color: white;
+  }
+  .btn1:hover{
+      background-color: gray;
+      box-shadow: 3px 3px 3px gray;
+  }
+  .btn2{
+      border: 1px solid gray;
+      border-radius: 4px;
+      background-color: white;
+  }
+  .btn2:hover{
+      background-color: gray;
+      box-shadow: 3px 3px 3px gray;
+  }
+  .btn3{
+      border: 1px solid gray;
+      border-radius: 4px;
+      background-color: white;
+  }
+  .btn3:hover{
+      background-color: gray;
+      box-shadow: 3px 3px 3px gray;
+  }
+  .btn4{
+      border: 1px solid gray;
+      border-radius: 4px;
+      background-color: white;
+  }
+  .btn4:hover{
+      background-color: gray;
+      box-shadow: 3px 3px 3px gray;
+  }
+  .btn5{
+      border: 1px solid gray;
+      border-radius: 4px;
+      background-color: white;
+  }
+  .btn5:hover{
+      background-color: gray;
+      box-shadow: 3px 3px 3px gray;
+  }
+  .btn6{
+      border: 1px solid gray;
+      border-radius: 4px;
+      background-color: white;
+  }
+  .btn-nav{
+      background-image: linear-gradient(to right, rgba(204, 207, 18, 0.527), rgb(228, 183, 183));
+      border-radius: 6px;
+  }
+  .btn6:hover{
+      background-color: gray;
+      box-shadow: 3px 3px 3px gray;
+  }
+  .btn7{
+      border: 1px solid gray;
+      border-radius: 4px;
+      background-color: white;
+  }
+  .btn7:hover{
+      background-color: gray;
+      box-shadow: 3px 3px 3px gray;
+  }
+  .btn8{
+      border: 1px solid gray;
+      border-radius: 4px;
+      background-color: white;
+  }
+  .btn8:hover{
+      background-color: gray;
+      box-shadow: 3px 3px 3px gray;
+  }
+  .btn9{
+      border: 1px solid gray;
+      border-radius: 4px;
+      background-color: white;
+  }
+  .btn9:hover{
+      background-color: gray;
+      box-shadow: 3px 3px 3px gray;
+  }
+  .home-logo{
+      border-radius: 1500px;
+  }
+  .col:hover{
+      transform: scale(1.1);
+     
+  }
+  .nav-item a{
+    color: black;
+    font-size: 20px;
+    border-radius: 8px;
+}
+.nav-item a:hover{
+  background-image: linear-gradient(to right, rgba(234, 235, 190, 0.979), rgb(28, 105, 126));
+}
+.cart-icon {
+    margin-left: 15px;
+    font-size: 20px;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px;
+    gap: 30px;
+  }
+  
+  .card {
+    width: 250px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.04);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    background-color: white;
+  }
+  
+  .card-body {
+    padding: 15px;
+    position: relative;
+  }
+  
+  .card-body p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  .dark-theme {
+    background-color: #121212 !important;
+    color: #ffffff !important;
+  }
+  
+  .dark-theme .navbar,
+  .dark-theme .card,
+  .dark-theme .footer,
+  .dark-theme .album {
+    background-color: #1e1e1e !important;
+    color: #ffffff !important;
+  }
+  
+  .dark-theme .card-body,
+  .dark-theme .nav-link,
+  .dark-theme .btn,
+  .dark-theme .navbar-toggler {
+    color: #ffffff !important;
+    background-color: transparent !important;
+    border-color: #ffffff !important;
+  }
+  
+  .dark-theme .nav-link:hover,
+  .dark-theme .btn:hover {
+    color: #000000 !important;
+    background-color: #ffffff !important;
+  }
+
+  
+  
+</style>
+<body>
+
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-lg" data-bs-theme="light">
+      <div class="container-fluid">
+        <a href="">
+          <img src="/Images/WhatsApp Image 2025-04-24 at 13.25.50_0c624746.jpg" alt="" width="60px" height="60px" style="border-radius: 100px;">
+        </a>
+    
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link ms-4" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="About.HTML" target="_blank">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#events">Online Booking</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#animals">Marine Life Chart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#feedback">Feedback</a>
+            </li>
+          </ul>
+    
+          <button id="themeToggle" class="btn btn-outline-dark">Dark Mode</button>
+        </div>
+      </div>
+    </nav>
+    
+    
+
+      <!-- Home -->
+
+    <div class="container text-center mt-4">
+  <img class="home-logo" src="./Images/png image.png" alt="Aquarium Logo" height="250px" width="300px" >
+  <h1 class="mt-4"><b> Welcome to Nexus Aquarium</b></h1>
+  <p>Explore the vast world of marine life in Washington’s top aquarium destination.</p>
+
+  <hr>
+
+  <!-- ALBUM -->
+<center>
+  
+  <!-- <div class="album py-5 bg-light">
+    <div class="container">
+      
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="/Images/Blue FIsh.jpeg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="225">
+            <div class="card-body">
+              <h1 class="card-text">Blue Fish</h1>
+              <hr>
+              <div class="d-flex justify-content-between align-items-start">
+                <div class="btn-group d-flex align-items-start">
+                  <button class="btn1 btn btn-outline-primary">Overview</button>
+                  <div class="slide1 ms-3" style="display: none; max-width: 250px;">
+                    <p><i>It is a marine pelagic fish found around the world in temperate and subtropical waters, except for the northern Pacific Ocean.</i></p>
+                  </div>
+                </div>
+                <small class="text-muted">1 Year</small>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+
+            <img src="/Images/Beta fish.jpeg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="225">
+          
+
+            <div class="card-body">
+              <h1 class="card-text">Beta Fish</h1>
+
+              <hr>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+
+                    <div class="slide2">
+                        <p><i>
+                            Betta fish are highly sensitive creatures and can easily become stressed. Common stressors include poor water conditions, sudden changes in temperature,</i>
+                        </p>
+                      </div>
+                  <button  class="btn2">Overview</button>
+                 
+                </div>
+                <small class="text-muted">2 Year</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+
+            <img src="/Images/angler.jpeg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="225" >
+           
+
+            <div class="card-body">
+              <h1 class="card-text">Angler Fish</h1> <hr>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  
+                    <div class="slide3">
+                        <p><i>
+                            The most sensitive and versatile line. Braided lines cast extremely well, are sensitive, and have a small diameter. That means you can stack more line on a small spool without stepping down strength</i>
+                        </p>
+                    </div>
+                  <button class="btn3">Overview</button>
+                
+                </div>
+                <small class="text-muted">6 Month</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+
+            <img src="/Images/butterfly.jpeg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="225">
+
+            <div class="card-body">
+              <h1 class="card-text">Butterfly Fish</h1> <hr>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+
+                    <div class="slide4">
+                        <p><i>It belongs to the large subgenus Rabdophorus which might warrant recognition as a distinct genus. In this group, it seems to be member of a lineage also containing species such as the spot-naped butterflyfish</i></p>
+                    </div>
+                  <button class="btn4 ">Overview</button>
+                
+                </div>
+                <small class="text-muted">3 Month</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+
+            <img src="/Images/sand fish.jpeg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="225">
+
+            <div class="card-body">
+              <h1 class="card-text">Sand Fish</h1> <hr>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+
+                    <div class="slide5">
+                        <p><i>The lateral line system is a remarkable sensory organ found in fish and some amphibians, acting as a sophisticated “remote touch” sensor. Visually, it often appears as a faint line running along the side of the body.</i></p>
+                    </div>
+                  <button  class="btn5">Overview</button>
+                
+                </div>
+                <small class="text-muted">5 Year</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+
+            <img src="/Images/goby fish.jpeg" alt=""  class="bd-placeholder-img card-img-top" width="100%" height="225">
+
+            <div class="card-body">
+              <h1 class="card-text">Goby Fish</h1> <hr>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+
+                    <div class="slide6">
+                        <p><i>Goby fish are generally hardy, peaceful, reef-safe saltwater aquarium fish that will be model citizens in a community reef tank.</i></p>
+                    </div>
+                  <button class="btn6">Overview</button>
+                 
+                </div>
+                <small class="text-muted">4 Year</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+
+            <img src="/Images/shark.jpeg" alt=""  class="bd-placeholder-img card-img-top" width="100%" height="225">
+          
+
+            <div class="card-body">
+              <h1 class="card-text">Shark</h1> <hr>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+
+                    <div class="slide7">
+                        <p><i>Sharks have different species and can be found in almost every part of the world which is surrounded by either sea or ocean. Sharks also have the ability to damage small boats which fisherman uses to catch fishes.</i></p>
+                    </div>
+                  <button  class="btn7">Overview</button>
+                 
+                </div>
+                <small class="text-muted">2 Month</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+
+            <img src="/Images/red drum.jpeg" alt=""  class="bd-placeholder-img card-img-top" width="100%" height="225">
+
+            <div class="card-body">
+              <h1 class="card-text">Red Drum</h1> <hr>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+
+                    <div class="slide8">
+                        <p><i> Inshore has always called for a floating line. Reds don’t demand a delicate presentation and shots are, in my experience, often short (20-50 feet). This, to me, means a short heavy head to make that shot quickly.</i> </p>
+                    </div>
+                  <button  class="btn8">Overview</button>
+                
+                </div>
+                <small class="text-muted">1 Month</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+
+            <img src="/Images/clown fish.jpeg" alt=""  class="bd-placeholder-img card-img-top" width="100%" height="225">
+        
+
+            <div class="card-body">
+              <h1 class="card-text">Clown Fish</h1> <hr>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+
+                    <div class="slide9">
+                        <p><i>Clown fish is the name of several types of fish that live in tropical oceans. They also are called anemone fish because they live among sea anemones. Their unusual habitat and bright coloring have made them popular aquarium fish.
+                        </i>
+                        </p>
+                    </div>
+                  <button  class="btn9">Overview</button>
+                  
+                </div>
+                <small class="text-muted">7 Hours</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+</center>
+<!-- images -->
+
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./Images/Beta fish.jpeg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/Images/clown fish.jpeg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/Images/goby fish.jpeg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+       <!-- Marine Animal -->
+
+       <div id="animals" class="container section-title">
+        <h2>Marine Life Animals</h2>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Species</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Fish</td>
+              <td>Clownfish, Angelfish</td>
+              <td>Brightly colored and commonly found in coral reefs.</td>
+            </tr>
+            <tr>
+              <td>Mammals</td>
+              <td>Dolphin, Seal</td>
+              <td>Intelligent creatures often found in groups.</td>
+            </tr>
+            <tr>
+              <td>Reptiles</td>
+              <td>Sea Turtle</td>
+              <td>Slow moving, shell-protected marine reptiles.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- Event -->
+
+     <div id="events" class="container section-title">
+      <h2>Upcoming Events</h2>
+      <ul>
+        <li><strong>Kids' Marine Workshop:</strong> 10th May, 10 AM - 1 PM</li>
+        <li><strong>School Tour Program:</strong> Every Saturday, 11 AM - 3 PM</li>
+      </ul>
+    </div>
+    <!-- Booking Form -->
+<div id="booking" class="container section-title">
+  <h2>Online Event Booking</h2>
+  <form>
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" class="form-control" id="name" required>
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control" id="email" required>
+    </div>
+    <div class="mb-3">
+      <label for="event" class="form-label">Select Event</label>
+      <select class="form-select" id="event" required>
+        <option value="">Choose...</option>
+        <option>Kids' Marine Workshop</option>
+        <option>School Tour Program</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Book Now</button>
+  </form>
+</div>
+
+     <!-- Contact -->
+
+     <div id="contact" class="container section-title">
+      <h2>Contact Details</h2>
+      <p><strong>Location:</strong> Washington, DC</p>
+      <p><strong>Phone:</strong> +1 234 567 890</p>
+      <p><strong>Email:</strong> info@nexusaquarium.com</p>
+      <p><strong>Timings:</strong> Mon-Sun, 9 AM - 6 PM</p>
+    </div>
+
+    <!-- feedback -->
+      
+    <div id="feedback" class="container section-title">
+      <h2>Feedback Form</h2>
+      <form>
+        <div class="mb-3">
+          <label for="feedbackName" class="form-label">Name</label>
+          <input type="text" class="form-control" id="feedbackName" required>
+        </div>
+        <div class="mb-3">
+          <label for="feedbackText" class="form-label">Feedback</label>
+          <textarea class="form-control" id="feedbackText" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+    </div>
+    
+
+     
+
+     
+
+    <!-- Footer -->
+     
+<footer class="footer text-center p-3 mt-5">
+  <p>&copy; 2025 Nexus Aquarium. All Rights Reserved.</p>
+</footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script></body>
+</html>
