@@ -1,733 +1,519 @@
-<!DOCTYPE html><html lang="en">     
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nexus Aquarium</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <link rel="shortcut icon" href="./Images/WhatsApp Image 2025-04-24 at 13.25.50_0c624746.jpg" type="image/x-icon" style="border-radius: 1000px;">
-  <script>
-    $(document).ready(function(){
-    $(".btn1").click(function(){
-      $(".slide1").slideToggle();
-      
-    });
-   
-  })
-        $(document).ready(function(){
-    $(".btn2").click(function(){
-      $(".slide2").slideToggle();
-      
-    });
-   
-  })
-        $(document).ready(function(){
-    $(".btn3").click(function(){
-      $(".slide3").slideToggle();
-      
-    });
-   
-  })
-        $(document).ready(function(){
-    $(".btn4").click(function(){
-      $(".slide4").slideToggle();
-      
-    });
-   
-  })
-        $(document).ready(function(){
-    $(".btn5").click(function(){
-      $(".slide5").slideToggle();
-      
-    });
-   
-  })
-        $(document).ready(function(){
-    $(".btn6").click(function(){
-      $(".slide6").slideToggle();
-      
-    });
-   
-  })
-        $(document).ready(function(){
-    $(".btn7").click(function(){
-      $(".slide7").slideToggle();
-      
-    });
-   
-  })
-        $(document).ready(function(){
-    $(".btn8").click(function(){
-      $(".slide8").slideToggle();
-      
-    });
-   
-  })
-        $(document).ready(function(){
-    $(".btn9").click(function(){
-      $(".slide9").slideToggle();
-      
-    });
-   
-  })
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hey, You 💙</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  $(document).ready(function () {
-    $('#themeToggle').click(function () {
-      $('body, .card, .navbar, .footer, .album').toggleClass('dark-theme');
-      
-      // Change button text dynamically
-      if ($(this).text() === 'Dark Mode') {
-        $(this).text('Light Mode');
-      } else {
-        $(this).text('Dark Mode');
-      }
-    });
-  });
+    :root {
+      --bg: #0d0f1a;
+      --bg2: #12152a;
+      --card: #161929;
+      --blue: #5b8dee;
+      --blue-soft: #3a5fc4;
+      --glow: rgba(91, 141, 238, 0.18);
+      --text: #e8eaf6;
+      --muted: #8892b0;
+      --white: #ffffff;
+    }
 
-  
-  </script>
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* ── Stars background ── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        radial-gradient(1px 1px at 20% 30%, rgba(255,255,255,0.4) 0%, transparent 100%),
+        radial-gradient(1px 1px at 60% 10%, rgba(255,255,255,0.3) 0%, transparent 100%),
+        radial-gradient(1px 1px at 80% 60%, rgba(255,255,255,0.25) 0%, transparent 100%),
+        radial-gradient(1px 1px at 40% 80%, rgba(255,255,255,0.2) 0%, transparent 100%),
+        radial-gradient(1px 1px at 10% 70%, rgba(255,255,255,0.35) 0%, transparent 100%),
+        radial-gradient(1px 1px at 90% 20%, rgba(255,255,255,0.3) 0%, transparent 100%),
+        radial-gradient(1px 1px at 50% 50%, rgba(255,255,255,0.15) 0%, transparent 100%),
+        radial-gradient(1px 1px at 70% 90%, rgba(255,255,255,0.2) 0%, transparent 100%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 60px 24px 80px;
+    }
+
+    /* ── Hero ── */
+    .hero {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+
+    .hero-emoji {
+      font-size: 3rem;
+      display: block;
+      margin-bottom: 20px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 6vw, 3rem);
+      font-weight: 600;
+      color: var(--white);
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+
+    .hero h1 span {
+      color: var(--blue);
+    }
+
+    .hero p {
+      color: var(--muted);
+      font-size: 1rem;
+      font-weight: 300;
+      letter-spacing: 0.03em;
+    }
+
+    /* ── Breathing Box ── */
+    .breathing-section {
+      background: var(--card);
+      border: 1px solid rgba(91,141,238,0.15);
+      border-radius: 20px;
+      padding: 36px 28px;
+      text-align: center;
+      margin-bottom: 32px;
+      box-shadow: 0 0 40px var(--glow);
+    }
+
+    .breathing-section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+
+    .breathing-section p.sub {
+      color: var(--muted);
+      font-size: 0.875rem;
+      margin-bottom: 28px;
+    }
+
+    .breath-ring-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .breath-ring {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(91,141,238,0.25) 0%, transparent 70%);
+      border: 2.5px solid var(--blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 4s ease-in-out, box-shadow 4s ease-in-out;
+      box-shadow: 0 0 20px rgba(91,141,238,0.3);
+    }
+
+    .breath-ring.expand {
+      transform: scale(1.55);
+      box-shadow: 0 0 50px rgba(91,141,238,0.5);
+    }
+
+    .breath-ring.hold {
+      transform: scale(1.55);
+      box-shadow: 0 0 50px rgba(91,141,238,0.6);
+    }
+
+    .breath-ring.shrink {
+      transform: scale(1);
+      box-shadow: 0 0 20px rgba(91,141,238,0.2);
+    }
+
+    #breath-label {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--blue);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    #breath-instruction {
+      font-size: 1rem;
+      color: var(--text);
+      margin-bottom: 20px;
+      min-height: 24px;
+      font-style: italic;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 11px 28px;
+      border-radius: 50px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      border: none;
+      outline: none;
+    }
+
+    .btn-primary {
+      background: var(--blue);
+      color: #fff;
+      box-shadow: 0 4px 20px rgba(91,141,238,0.35);
+    }
+
+    .btn-primary:hover {
+      background: #7aa5f5;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(91,141,238,0.5);
+    }
+
+    .btn-ghost {
+      background: transparent;
+      color: var(--blue);
+      border: 1.5px solid var(--blue);
+    }
+
+    .btn-ghost:hover {
+      background: rgba(91,141,238,0.1);
+      transform: translateY(-2px);
+    }
+
+    /* ── Message Card ── */
+    .message-card {
+      background: var(--card);
+      border: 1px solid rgba(91,141,238,0.12);
+      border-radius: 20px;
+      padding: 40px 36px;
+      margin-bottom: 32px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .message-card::before {
+      content: '\201C';
+      position: absolute;
+      top: 10px;
+      left: 24px;
+      font-family: 'Playfair Display', serif;
+      font-size: 6rem;
+      color: rgba(91,141,238,0.1);
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .message-card h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      color: var(--white);
+      margin-bottom: 20px;
+    }
+
+    .message-card p {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 1.05rem;
+      line-height: 1.85;
+      color: #c8cee8;
+    }
+
+    .message-card p + p {
+      margin-top: 16px;
+    }
+
+    .heart-line {
+      text-align: center;
+      margin-top: 24px;
+      font-size: 1.3rem;
+      opacity: 0.7;
+    }
+
+    /* ── Affirmations ── */
+    .affirmations-section {
+      background: var(--card);
+      border: 1px solid rgba(91,141,238,0.12);
+      border-radius: 20px;
+      padding: 36px 28px;
+      margin-bottom: 32px;
+      text-align: center;
+    }
+
+    .affirmations-section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+
+    .affirmations-section p.sub {
+      color: var(--muted);
+      font-size: 0.875rem;
+      margin-bottom: 24px;
+    }
+
+    #affirmation-text {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 1.15rem;
+      color: var(--blue);
+      min-height: 60px;
+      margin-bottom: 20px;
+      line-height: 1.6;
+      transition: opacity 0.4s ease;
+    }
+
+    /* ── Grounding ── */
+    .grounding-section {
+      background: var(--card);
+      border: 1px solid rgba(91,141,238,0.12);
+      border-radius: 20px;
+      padding: 36px 28px;
+      margin-bottom: 32px;
+    }
+
+    .grounding-section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+
+    .grounding-section p.sub {
+      color: var(--muted);
+      font-size: 0.875rem;
+      margin-bottom: 24px;
+    }
+
+    .grounding-steps {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .grounding-steps li {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 14px 16px;
+      background: rgba(91,141,238,0.06);
+      border-radius: 12px;
+      border: 1px solid rgba(91,141,238,0.1);
+      font-size: 0.95rem;
+      color: var(--text);
+      line-height: 1.5;
+      cursor: pointer;
+      transition: background 0.2s, border-color 0.2s;
+      user-select: none;
+    }
+
+    .grounding-steps li:hover {
+      background: rgba(91,141,238,0.12);
+      border-color: rgba(91,141,238,0.3);
+    }
+
+    .grounding-steps li.done {
+      opacity: 0.5;
+      text-decoration: line-through;
+    }
+
+    .step-num {
+      min-width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: var(--blue);
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.8rem;
+      margin-top: 48px;
+    }
+
+    .footer span {
+      color: var(--blue);
+    }
+
+    @media (max-width: 480px) {
+      .message-card { padding: 28px 20px; }
+      .breathing-section, .affirmations-section, .grounding-section { padding: 28px 18px; }
+    }
+  </style>
 </head>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-  }
-  .navbar, .footer {
-    background-color: #0077b6;
-  }
-  .navbar a, .footer p {
-    color: white;
-  }
-  .section-title {
-    margin-top: 40px;
-  }
-  .navbar{
-      padding: 20px;
-  }
-  #about{
-    border: 8px solid rgba(30, 185, 30, 0.5);
-    background-color: rgb(0, 0, 0);
-    color: white;
-    font-family: sans-serif;
-  }
-  #about h1{
-    text-align: center;
-    color: rgb(218, 144, 144); 
-    
-  }
-  #about h4{
-    text-align: center;
-  }
-  .table {
-    margin-top: 20px;
-  }
-  .slide1{
-      display: none;
-  }
-  .slide2{
-      display: none;
-  }
-  .slide3{
-      display: none;
-  }
-  .slide4{
-      display: none;
-  }
-  .slide5{
-      display: none;
-  }
-  .slide6{
-      display: none;
-  }
-  .slide7{
-      display: none;
-  }
-  .slide8{
-      display: none;
-  }
-  .slide9{
-      display: none;
-  }
-  .btn1{
-      border: 1px solid gray;
-      border-radius: 4px;
-      background-color: white;
-  }
-  .btn1:hover{
-      background-color: gray;
-      box-shadow: 3px 3px 3px gray;
-  }
-  .btn2{
-      border: 1px solid gray;
-      border-radius: 4px;
-      background-color: white;
-  }
-  .btn2:hover{
-      background-color: gray;
-      box-shadow: 3px 3px 3px gray;
-  }
-  .btn3{
-      border: 1px solid gray;
-      border-radius: 4px;
-      background-color: white;
-  }
-  .btn3:hover{
-      background-color: gray;
-      box-shadow: 3px 3px 3px gray;
-  }
-  .btn4{
-      border: 1px solid gray;
-      border-radius: 4px;
-      background-color: white;
-  }
-  .btn4:hover{
-      background-color: gray;
-      box-shadow: 3px 3px 3px gray;
-  }
-  .btn5{
-      border: 1px solid gray;
-      border-radius: 4px;
-      background-color: white;
-  }
-  .btn5:hover{
-      background-color: gray;
-      box-shadow: 3px 3px 3px gray;
-  }
-  .btn6{
-      border: 1px solid gray;
-      border-radius: 4px;
-      background-color: white;
-  }
-  .btn-nav{
-      background-image: linear-gradient(to right, rgba(204, 207, 18, 0.527), rgb(228, 183, 183));
-      border-radius: 6px;
-  }
-  .btn6:hover{
-      background-color: gray;
-      box-shadow: 3px 3px 3px gray;
-  }
-  .btn7{
-      border: 1px solid gray;
-      border-radius: 4px;
-      background-color: white;
-  }
-  .btn7:hover{
-      background-color: gray;
-      box-shadow: 3px 3px 3px gray;
-  }
-  .btn8{
-      border: 1px solid gray;
-      border-radius: 4px;
-      background-color: white;
-  }
-  .btn8:hover{
-      background-color: gray;
-      box-shadow: 3px 3px 3px gray;
-  }
-  .btn9{
-      border: 1px solid gray;
-      border-radius: 4px;
-      background-color: white;
-  }
-  .btn9:hover{
-      background-color: gray;
-      box-shadow: 3px 3px 3px gray;
-  }
-  .home-logo{
-      border-radius: 1500px;
-  }
-  .col:hover{
-      transform: scale(1.1);
-     
-  }
-  .nav-item a{
-    color: black;
-    font-size: 20px;
-    border-radius: 8px;
-}
-.nav-item a:hover{
-  background-image: linear-gradient(to right, rgba(234, 235, 190, 0.979), rgb(28, 105, 126));
-}
-.cart-icon {
-    margin-left: 15px;
-    font-size: 20px;
-  }
-  
-  .card-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 40px;
-    gap: 30px;
-  }
-  
-  .card {
-    width: 250px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    overflow: hidden;
-    transition: transform 0.2s ease-in-out;
-  }
-  
-  .card:hover {
-    transform: scale(1.04);
-  }
-  
-  .card img {
-    width: 100%;
-    height: 180px;
-    object-fit: contain;
-    background-color: white;
-  }
-  
-  .card-body {
-    padding: 15px;
-    position: relative;
-  }
-  
-  .card-body p {
-    margin: 0;
-    font-size: 14px;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  .dark-theme {
-    background-color: #121212 !important;
-    color: #ffffff !important;
-  }
-  
-  .dark-theme .navbar,
-  .dark-theme .card,
-  .dark-theme .footer,
-  .dark-theme .album {
-    background-color: #1e1e1e !important;
-    color: #ffffff !important;
-  }
-  
-  .dark-theme .card-body,
-  .dark-theme .nav-link,
-  .dark-theme .btn,
-  .dark-theme .navbar-toggler {
-    color: #ffffff !important;
-    background-color: transparent !important;
-    border-color: #ffffff !important;
-  }
-  
-  .dark-theme .nav-link:hover,
-  .dark-theme .btn:hover {
-    color: #000000 !important;
-    background-color: #ffffff !important;
-  }
-
-  
-  
-</style>
 <body>
+<div class="container">
 
-    <!-- navbar -->
-
-    <nav class="navbar navbar-expand-lg" data-bs-theme="light">
-      <div class="container-fluid">
-        <a href="">
-          <img src="/Images/WhatsApp Image 2025-04-24 at 13.25.50_0c624746.jpg" alt="" width="60px" height="60px" style="border-radius: 100px;">
-        </a>
-    
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link ms-4" aria-current="page" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="About.HTML" target="_blank">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#events">Online Booking</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#animals">Marine Life Chart</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#feedback">Feedback</a>
-            </li>
-          </ul>
-    
-          <button id="themeToggle" class="btn btn-outline-dark">Dark Mode</button>
-        </div>
-      </div>
-    </nav>
-    
-    
-
-      <!-- Home -->
-
-    <div class="container text-center mt-4">
-  <img class="home-logo" src="./Images/png image.png" alt="Aquarium Logo" height="250px" width="300px" >
-  <h1 class="mt-4"><b> Welcome to Nexus Aquarium</b></h1>
-  <p>Explore the vast world of marine life in Washington’s top aquarium destination.</p>
-
-  <hr>
-
-  <!-- ALBUM -->
-<center>
-  
-  <!-- <div class="album py-5 bg-light">
-    <div class="container">
-      
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="/Images/Blue FIsh.jpeg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="225">
-            <div class="card-body">
-              <h1 class="card-text">Blue Fish</h1>
-              <hr>
-              <div class="d-flex justify-content-between align-items-start">
-                <div class="btn-group d-flex align-items-start">
-                  <button class="btn1 btn btn-outline-primary">Overview</button>
-                  <div class="slide1 ms-3" style="display: none; max-width: 250px;">
-                    <p><i>It is a marine pelagic fish found around the world in temperate and subtropical waters, except for the northern Pacific Ocean.</i></p>
-                  </div>
-                </div>
-                <small class="text-muted">1 Year</small>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-
-            <img src="/Images/Beta fish.jpeg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="225">
-          
-
-            <div class="card-body">
-              <h1 class="card-text">Beta Fish</h1>
-
-              <hr>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-
-                    <div class="slide2">
-                        <p><i>
-                            Betta fish are highly sensitive creatures and can easily become stressed. Common stressors include poor water conditions, sudden changes in temperature,</i>
-                        </p>
-                      </div>
-                  <button  class="btn2">Overview</button>
-                 
-                </div>
-                <small class="text-muted">2 Year</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-
-            <img src="/Images/angler.jpeg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="225" >
-           
-
-            <div class="card-body">
-              <h1 class="card-text">Angler Fish</h1> <hr>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  
-                    <div class="slide3">
-                        <p><i>
-                            The most sensitive and versatile line. Braided lines cast extremely well, are sensitive, and have a small diameter. That means you can stack more line on a small spool without stepping down strength</i>
-                        </p>
-                    </div>
-                  <button class="btn3">Overview</button>
-                
-                </div>
-                <small class="text-muted">6 Month</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card shadow-sm">
-
-            <img src="/Images/butterfly.jpeg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="225">
-
-            <div class="card-body">
-              <h1 class="card-text">Butterfly Fish</h1> <hr>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-
-                    <div class="slide4">
-                        <p><i>It belongs to the large subgenus Rabdophorus which might warrant recognition as a distinct genus. In this group, it seems to be member of a lineage also containing species such as the spot-naped butterflyfish</i></p>
-                    </div>
-                  <button class="btn4 ">Overview</button>
-                
-                </div>
-                <small class="text-muted">3 Month</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-
-            <img src="/Images/sand fish.jpeg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="225">
-
-            <div class="card-body">
-              <h1 class="card-text">Sand Fish</h1> <hr>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-
-                    <div class="slide5">
-                        <p><i>The lateral line system is a remarkable sensory organ found in fish and some amphibians, acting as a sophisticated “remote touch” sensor. Visually, it often appears as a faint line running along the side of the body.</i></p>
-                    </div>
-                  <button  class="btn5">Overview</button>
-                
-                </div>
-                <small class="text-muted">5 Year</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-
-            <img src="/Images/goby fish.jpeg" alt=""  class="bd-placeholder-img card-img-top" width="100%" height="225">
-
-            <div class="card-body">
-              <h1 class="card-text">Goby Fish</h1> <hr>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-
-                    <div class="slide6">
-                        <p><i>Goby fish are generally hardy, peaceful, reef-safe saltwater aquarium fish that will be model citizens in a community reef tank.</i></p>
-                    </div>
-                  <button class="btn6">Overview</button>
-                 
-                </div>
-                <small class="text-muted">4 Year</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card shadow-sm">
-
-            <img src="/Images/shark.jpeg" alt=""  class="bd-placeholder-img card-img-top" width="100%" height="225">
-          
-
-            <div class="card-body">
-              <h1 class="card-text">Shark</h1> <hr>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-
-                    <div class="slide7">
-                        <p><i>Sharks have different species and can be found in almost every part of the world which is surrounded by either sea or ocean. Sharks also have the ability to damage small boats which fisherman uses to catch fishes.</i></p>
-                    </div>
-                  <button  class="btn7">Overview</button>
-                 
-                </div>
-                <small class="text-muted">2 Month</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-
-            <img src="/Images/red drum.jpeg" alt=""  class="bd-placeholder-img card-img-top" width="100%" height="225">
-
-            <div class="card-body">
-              <h1 class="card-text">Red Drum</h1> <hr>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-
-                    <div class="slide8">
-                        <p><i> Inshore has always called for a floating line. Reds don’t demand a delicate presentation and shots are, in my experience, often short (20-50 feet). This, to me, means a short heavy head to make that shot quickly.</i> </p>
-                    </div>
-                  <button  class="btn8">Overview</button>
-                
-                </div>
-                <small class="text-muted">1 Month</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-
-            <img src="/Images/clown fish.jpeg" alt=""  class="bd-placeholder-img card-img-top" width="100%" height="225">
-        
-
-            <div class="card-body">
-              <h1 class="card-text">Clown Fish</h1> <hr>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-
-                    <div class="slide9">
-                        <p><i>Clown fish is the name of several types of fish that live in tropical oceans. They also are called anemone fish because they live among sea anemones. Their unusual habitat and bright coloring have made them popular aquarium fish.
-                        </i>
-                        </p>
-                    </div>
-                  <button  class="btn9">Overview</button>
-                  
-                </div>
-                <small class="text-muted">7 Hours</small>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <!-- Hero -->
+  <div class="hero">
+    <span class="hero-emoji">🌙</span>
+    <h1>Hey, <span>you</span>.</h1>
+    <p>You are not alone in this. Not even a little bit.</p>
   </div>
-</div> -->
-</center>
-<!-- images -->
 
-  <div id="carouselExampleCaptions" class="carousel slide">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="./Images/Beta fish.jpeg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="/Images/clown fish.jpeg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Some representative placeholder content for the second slide.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="/Images/goby fish.jpeg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
-        </div>
+  <!-- Breathing Exercise -->
+  <div class="breathing-section">
+    <h2>Let's breathe together 🫁</h2>
+    <p class="sub">Follow the circle — it will guide you.</p>
+    <div class="breath-ring-wrap">
+      <div class="breath-ring" id="breath-ring">
+        <span id="breath-label">ready</span>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+    <p id="breath-instruction">Press start when you're ready.</p>
+    <button class="btn btn-primary" id="breath-btn" onclick="toggleBreath()">Start Breathing</button>
   </div>
-       <!-- Marine Animal -->
 
-       <div id="animals" class="container section-title">
-        <h2>Marine Life Animals</h2>
-        <table class="table table-bordered">
-          <thead>
-            <tr>
-              <th>Category</th>
-              <th>Species</th>
-              <th>Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Fish</td>
-              <td>Clownfish, Angelfish</td>
-              <td>Brightly colored and commonly found in coral reefs.</td>
-            </tr>
-            <tr>
-              <td>Mammals</td>
-              <td>Dolphin, Seal</td>
-              <td>Intelligent creatures often found in groups.</td>
-            </tr>
-            <tr>
-              <td>Reptiles</td>
-              <td>Sea Turtle</td>
-              <td>Slow moving, shell-protected marine reptiles.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <!-- Event -->
+  <!-- The Message -->
+  <div class="message-card">
+    <h2>Something I need you to read 💙</h2>
+    <p>
+      Tralalelo... I know it's not easy to push those thoughts away. I know how heavy it feels —
+      and I won't pretend otherwise. But you are a strong girl. Stronger than you think.
+      Strong enough to carry this, and strong enough to overcome it.
+    </p>
+    <p>
+      I'm with you. In everything. Always just one message away — whenever you feel anything,
+      whatever it is, just text me. I may not be able to fix it, but I will always be here
+      to listen, to talk, to sit with you through it.
+    </p>
+    <p>
+      Please, just take care of yourself. I'm not going anywhere. 💙
+    </p>
+    <div class="heart-line">💙 &nbsp; 💙 &nbsp; 💙</div>
+  </div>
 
-     <div id="events" class="container section-title">
-      <h2>Upcoming Events</h2>
-      <ul>
-        <li><strong>Kids' Marine Workshop:</strong> 10th May, 10 AM - 1 PM</li>
-        <li><strong>School Tour Program:</strong> Every Saturday, 11 AM - 3 PM</li>
-      </ul>
-    </div>
-    <!-- Booking Form -->
-<div id="booking" class="container section-title">
-  <h2>Online Event Booking</h2>
-  <form>
-    <div class="mb-3">
-      <label for="name" class="form-label">Name</label>
-      <input type="text" class="form-control" id="name" required>
-    </div>
-    <div class="mb-3">
-      <label for="email" class="form-label">Email</label>
-      <input type="email" class="form-control" id="email" required>
-    </div>
-    <div class="mb-3">
-      <label for="event" class="form-label">Select Event</label>
-      <select class="form-select" id="event" required>
-        <option value="">Choose...</option>
-        <option>Kids' Marine Workshop</option>
-        <option>School Tour Program</option>
-      </select>
-    </div>
-    <button type="submit" class="btn btn-primary">Book Now</button>
-  </form>
+  <!-- Affirmations -->
+  <div class="affirmations-section">
+    <h2>You need to hear this ✨</h2>
+    <p class="sub">Tap the button for a reminder.</p>
+    <div id="affirmation-text">"You have survived every hard day so far. That's 100%."</div>
+    <button class="btn btn-ghost" onclick="nextAffirmation()">Show me another 💫</button>
+  </div>
+
+  <!-- Grounding 5-4-3-2-1 -->
+  <div class="grounding-section">
+    <h2>5-4-3-2-1 Grounding 🌿</h2>
+    <p class="sub">If panic feels overwhelming, tap each step as you do it.</p>
+    <ul class="grounding-steps">
+      <li onclick="this.classList.toggle('done')"><span class="step-num">5</span> Name 5 things you can <strong>see</strong> right now.</li>
+      <li onclick="this.classList.toggle('done')"><span class="step-num">4</span> Notice 4 things you can <strong>touch</strong> or feel.</li>
+      <li onclick="this.classList.toggle('done')"><span class="step-num">3</span> Listen for 3 things you can <strong>hear</strong>.</li>
+      <li onclick="this.classList.toggle('done')"><span class="step-num">2</span> Find 2 things you can <strong>smell</strong>.</li>
+      <li onclick="this.classList.toggle('done')"><span class="step-num">1</span> Notice 1 thing you can <strong>taste</strong>.</li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    Made with 💙 — <span>you are never alone.</span>
+  </div>
+
 </div>
 
-     <!-- Contact -->
+<script>
+  // ── Breathing ──
+  const phases = [
+    { label: 'INHALE', instruction: 'Breathe in slowly...', duration: 4000, cls: 'expand' },
+    { label: 'HOLD',   instruction: 'Hold gently...',       duration: 4000, cls: 'hold'   },
+    { label: 'EXHALE', instruction: 'Let it all out...',    duration: 4000, cls: 'shrink'  },
+    { label: 'HOLD',   instruction: 'Rest...',              duration: 2000, cls: 'shrink'  },
+  ];
 
-     <div id="contact" class="container section-title">
-      <h2>Contact Details</h2>
-      <p><strong>Location:</strong> Washington, DC</p>
-      <p><strong>Phone:</strong> +1 234 567 890</p>
-      <p><strong>Email:</strong> info@nexusaquarium.com</p>
-      <p><strong>Timings:</strong> Mon-Sun, 9 AM - 6 PM</p>
-    </div>
+  let breathRunning = false;
+  let breathTimeout = null;
+  let phaseIndex = 0;
 
-    <!-- feedback -->
-      
-    <div id="feedback" class="container section-title">
-      <h2>Feedback Form</h2>
-      <form>
-        <div class="mb-3">
-          <label for="feedbackName" class="form-label">Name</label>
-          <input type="text" class="form-control" id="feedbackName" required>
-        </div>
-        <div class="mb-3">
-          <label for="feedbackText" class="form-label">Feedback</label>
-          <textarea class="form-control" id="feedbackText" rows="3" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-success">Submit</button>
-      </form>
-    </div>
-    
+  function runPhase() {
+    if (!breathRunning) return;
+    const phase = phases[phaseIndex % phases.length];
+    const ring = document.getElementById('breath-ring');
+    const label = document.getElementById('breath-label');
+    const instr = document.getElementById('breath-instruction');
 
-     
+    ring.className = 'breath-ring ' + phase.cls;
+    label.textContent = phase.label;
+    instr.textContent = phase.instruction;
 
-     
+    phaseIndex++;
+    breathTimeout = setTimeout(runPhase, phase.duration);
+  }
 
-    <!-- Footer -->
-     
-<footer class="footer text-center p-3 mt-5">
-  <p>&copy; 2025 Nexus Aquarium. All Rights Reserved.</p>
-</footer>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script></body>
+  function toggleBreath() {
+    const btn = document.getElementById('breath-btn');
+    const ring = document.getElementById('breath-ring');
+    const label = document.getElementById('breath-label');
+    const instr = document.getElementById('breath-instruction');
+
+    if (!breathRunning) {
+      breathRunning = true;
+      phaseIndex = 0;
+      btn.textContent = 'Stop';
+      runPhase();
+    } else {
+      breathRunning = false;
+      clearTimeout(breathTimeout);
+      ring.className = 'breath-ring';
+      label.textContent = 'ready';
+      instr.textContent = 'Press start when you\'re ready.';
+      btn.textContent = 'Start Breathing';
+    }
+  }
+
+  // ── Affirmations ──
+  const affirmations = [
+    '"You have survived every hard day so far. That\'s 100%."',
+    '"You don\'t have to have it all figured out right now."',
+    '"Being strong doesn\'t mean feeling nothing. It means feeling everything and still going."',
+    '"You are allowed to rest. You are allowed to breathe."',
+    '"One moment at a time. Just this moment. You can do this."',
+    '"You matter more than you know, to more people than you think."',
+    '"It\'s okay not to be okay. What matters is you\'re still here."',
+    '"You are not a burden. You are a human being doing their best."',
+  ];
+
+  let affirmIdx = 0;
+
+  function nextAffirmation() {
+    const el = document.getElementById('affirmation-text');
+    el.style.opacity = 0;
+    setTimeout(() => {
+      affirmIdx = (affirmIdx + 1) % affirmations.length;
+      el.textContent = affirmations[affirmIdx];
+      el.style.opacity = 1;
+    }, 400);
+  }
+</script>
+</body>
 </html>
